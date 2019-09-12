@@ -1,0 +1,28 @@
+doctype html
+html lang="en"
+  head
+    title Home Control
+    meta charset="utf-8"
+    meta name="keywords" content=""
+    meta name="author" content="Oliver-Alexander Schmidt"
+
+    // Styles
+    link rel="stylesheet" href="css/reset.css"
+    link rel="stylesheet" href="styles.css" media="screen, projection"
+    link rel="stylesheet" href="css/jqueryui-min-1.12.1.css"
+
+    base href="/"
+
+  body
+    article
+      p
+        a href="/" Main
+
+      p
+        a href="/team" Team
+
+      main
+
+        ng-view
+
+    script data-main="#{settings.require_main}" src="#{settings.require_lib}"
