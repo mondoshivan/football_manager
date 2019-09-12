@@ -1,7 +1,7 @@
 FROM ruby:2.4.6
 
 COPY server /usr/src/app
-RUN mkdir -p /var/log/home_control
+RUN mkdir -p /var/log/football_manager
 
 WORKDIR /usr/src/app
 

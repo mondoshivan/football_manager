@@ -20,7 +20,7 @@ class Controller < Sinatra::Base
     set :root, File.join(File.dirname(__FILE__), '../../../')
 
     # logging
-    logger = Logger.new(settings.home_control_log_file)
+    logger = Logger.new(settings.log_file)
     logger.level = Logger::DEBUG if development?
     set :logger, logger
     enable :logging

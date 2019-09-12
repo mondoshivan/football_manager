@@ -1,5 +1,5 @@
 server: thin
-home_control_log_file: /var/log/home_control/home_control.log
+log_file: /var/log/football_manager/football_manager.log
 views: views
 js: public
 css: css
