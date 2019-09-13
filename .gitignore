@@ -3,3 +3,5 @@
 node_modules
 Gemfile.lock
 .bundle
+package-lock.json
+styles.scssc
