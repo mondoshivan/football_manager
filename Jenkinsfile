@@ -14,6 +14,12 @@ node {
         app = docker.build("mondoshivan/football_manager")
     }
 
+    stage('Tests') {
+            docker.image("mondoshivan/football_manager").inside {
+                sh 'jest'
+            }
+        }
+
     stage('Push image') {
         /* Finally, we'll push the image with two tags:
          * First, the incremental build number from Jenkins
