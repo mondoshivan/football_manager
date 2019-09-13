@@ -16,7 +16,9 @@ node {
 
     stage('Tests') {
             docker.image('mondoshivan/football_manager').withRun('--rm') { c ->
-                sh 'jest'
+                docker.image('mondoshivan/football_manager').inside() {
+                    sh 'jest'
+                }
             }
         }
 
