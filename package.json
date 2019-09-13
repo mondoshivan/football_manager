@@ -3,7 +3,7 @@
     "transform": {
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
     "moduleFileExtensions": [
       "ts",
       "tsx",
@@ -11,7 +11,10 @@
     ]
   },
   "devDependencies": {
+    "@types/angular": "^1.6.56",
     "@types/jest": "^24.0.18",
+    "@types/jquery": "^3.3.31",
+    "@types/requirejs": "^2.1.31",
     "jest": "^24.9.0",
     "ts-jest": "^24.1.0",
     "typescript": "^3.6.3"
