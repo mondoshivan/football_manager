@@ -15,7 +15,7 @@ node {
     }
 
     stage('Tests') {
-            docker.image('mondoshivan/football_manager').withRun('--rm') { c ->
+            docker.image('mondoshivan/football_manager').withRun() { c ->
                 sh "docker exec ${c.id} jest"
             }
         }
